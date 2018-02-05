@@ -1,6 +1,6 @@
 ---
 - set_fact:
-    ferm_rules: "{{ ferm_rules|default({}) | combine(ferm_default_rules) }}"
+    ferm_rules: "{{ ferm_rules|default({}) }}"
 
 # This Playbook configure firewall 'ferm'
 - name: Ferm | Install iptables
